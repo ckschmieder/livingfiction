@@ -1,0 +1,11 @@
+/*Flexbox CSS*/
+
+.flexwrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.updates-wrapper {
+	flex-direction: column;
+}
+
