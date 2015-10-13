@@ -1,0 +1,309 @@
+@font-face{
+	font-family: 'Astonished';
+	src: local("Astonished"), url('../fonts/Astonished.ttf'); 
+}
+
+@font-face {
+    font-family: 'leanderregular';
+    src: url('../fonts/Leander-webfont.eot');
+    src: url('../fonts/Leander-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Leander-webfont.woff') format('woff'),
+         url('../fonts/Leander-webfont.ttf') format('truetype'),
+         url('../fonts/Leander-webfont.svg#leanderregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'belligerent_madnessregular';
+    src: url('../fonts/belligerent-webfont.eot');
+    src: url('../fonts/belligerent-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/belligerent-webfont.woff') format('woff'),
+         url('../fonts/belligerent-webfont.ttf') format('truetype'),
+         url('../fonts/belligerent-webfont.svg#belligerent_madnessregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  background: url("../images/background2.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	font: normal 120% Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+
+
+/*
+.site-header {
+	height: 180px;
+	background-image: url("../images/guild-logo.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+*/
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'belligerent_madnessregular', Arial, sans-serif;
+	color: #339CF5;
+	text-shadow: 1px 1px #000;
+	letter-spacing: 0px;
+}
+
+h1 {
+  font: bold 195% 'belligerent_madnessregular', Arial, sans-serif;
+	letter-spacing: .5px;
+}  
+  
+h2 {
+  font: bold 160% 'belligerent_madnessregular', Arial, sans-serif;
+}
+
+
+h3
+{ font: italic 125% 'belligerent_madnessregular', Arial, sans-serif;
+	letter-spacing: 0.5px;
+}
+
+h4, h5, h6
+{ margin: 0;
+  padding: 0 0 0px 0;
+  font: normal 125% 'belligerent_madnessregular', Arial, sans-serif;
+  color: #FFF;
+  line-height: 1.5em;}
+
+h5, h6
+{ font: normal 95% 'belligerent_madnessregular', Arial, sans-serif;
+  color: #888;
+  padding-bottom: 15px;}
+
+p { 
+	padding: 5px 0 10px 0;
+	color: #FFF;
+	font: normal 115% Verdana, Arial, sans-serif;
+	line-height: 1.5em;	
+	text-shadow: 0 .5px .5px black;
+}
+
+#maincontainer {
+	max-width: 960px;
+	background-color: rgba(0, 0, 0, 0.5);
+	
+	border-radius: 0px 0px 7px 7px;
+}
+
+
+
+/* Carousel */
+
+#screenshots-carousel {
+	max-width: 960px;
+	width: inherit;
+}
+
+.carousel-container {
+	padding: 0px;
+	margin: 0px;
+	width: inherit;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+/* End Carousel */
+
+#my-navbar {
+  margin: 0;
+  padding: 0;
+}
+
+/*   //For text logo
+#welcome h2 {
+	font: normal 1150% 'Astonished', Arial, sans-serif;
+	text-align: center;
+	letter-spacing: 8px;
+	text-shadow: 4px 4px #002f76;
+	color: #FFF;
+	margin-bottom: -12px;
+}
+*/
+
+
+/* Portraits */
+
+/*.grid {
+  width: auto;
+  margin: auto;
+  vertical-align: middle;
+  display: inline-block;
+}*/
+
+.portrait-col {
+    position: relative;
+    min-height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.portraits {
+  width: 100%;
+  border: 2px solid #333; 
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.portraits:hover {
+  width: 100%;  
+  border: 2px solid #333; 
+  border-radius: 5px;
+  box-shadow: 0 0 15px 0px #444;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+ul li img {  
+  width: 90px;
+  border: 1px solid #FCF4DC;
+  margin: 2px 1px;
+}
+
+/* END Portraits */
+
+
+footer { 
+	height: 50px;
+	padding: 20px 0px 80px;
+	font-weight: bold;
+	text-align: center; 
+	text-shadow: 1px 1px #000;
+	color: #FFF;
+}
+
+footer a
+{ color: #FFF;
+  text-decoration: none;
+  padding-bottom: 20px;}
+
+footer a:hover
+{ text-decoration: underline;
+  color: #FFF;}
+
+
+/* 
+#nav-2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  font-family: Raleway;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+*/
+
+footer li {
+ font-color: #000;
+
+}
+
+
+
+
+.link-1 {
+  transition: 0.3s ease;
+  
+  color: #9E9E9E;
+  font-size: 1.0em;
+  text-decoration: none;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  
+}
+.link-1:hover {
+  color: #ffffff;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding: 15px 15px;
+  
+}
+
+
+.navbar-brand {
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+
+}
+.navbar-brand:hover {
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+
+}
+
