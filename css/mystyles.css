@@ -281,7 +281,7 @@ footer li {
   transition: 0.3s ease;
   
   color: #9E9E9E;
-  font-size: 1.0em;
+  font-size: 1.4em;
   text-decoration: none;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
@@ -304,5 +304,14 @@ footer li {
 .navbar-brand:hover {
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
+
+}
+
+
+@media (min-width: 768px) {
+  #navbar-brand-collapsed {
+    display: none;
+  }
+
 
 }

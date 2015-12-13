@@ -1,11 +1,44 @@
 /*Flexbox CSS*/
 
-.flexwrapper {
+/*.flexwrapper {
 	display: flex;
 	flex-wrap: wrap;
 }
 
 .updates-wrapper {
 	flex-direction: column;
-}
+}*/
 
+/*.navbar-nav li {
+	font-size: 125%;		
+}*/
+
+@media (min-width: 768px) {
+
+	.navbar-nav {
+		display: flex;
+		justify-content: space-between;
+		float: none;
+	}
+
+	.navbar-nav li {
+		flex: 1 0 auto;
+
+	}
+
+	.story-wrapper {
+		display: flex;
+		flex-flow: row;
+	}
+
+	.content-wrap {
+		display: flex;
+		flex-flow: row;		
+	}
+
+	#navbar-collapse {
+		padding: 0px;
+	}
+
+
+}
